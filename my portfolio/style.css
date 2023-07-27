@@ -1,0 +1,362 @@
+body{
+    margin:0px;
+    font-family: sans-serif;
+}
+
+/* Header */
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image:url(mac.jpg) ;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text-center{
+    text-align: center;
+}
+/* horizontal-list */
+.horizontal-list
+{
+    margin: 0%;
+    list-style: none;
+    padding-left: 0%;
+    padding-top: 20px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    transition: color 1px,border-bottom 4s;
+}
+.horizontal-list li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+#body-header div{
+    color: white;
+    margin-top: 12%;
+}
+#body-header h1{
+    font-size: 2.5rem;
+}
+#body-header div a{
+    margin: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#body-header div i{
+    color: white;
+  
+}
+#body-header div a:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196,196 , 0.3) ;
+}
+
+/* .................section properties.............. */
+section{
+    width: 100%;
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+section:nth-child(2n){
+    background-color: rgb(225, 219, 219);
+}
+section:nth-child(2n+1){
+    background-color: rgb(240, 230, 230);
+}
+
+/* ..................about section........... */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#about p{
+    width: 70%;
+    line-height: 2rem;
+    color: gray;
+    font-size: 1.1rem;
+}
+#about p span{
+    color: #2857a4;
+}
+.my-image img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-top: -17vh;
+    border: solid 3px white;
+    box-shadow: 2px 3px 15px grey ;
+}
+
+/* .................skills section......... */
+#skills{
+    height: 500px;
+}
+.skills-display{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skill-progress{
+    background-color: lightgrey;
+    margin: 20px;
+    border-radius: 1rem;
+    width: 25%;
+    height: 1.9rem;
+}
+
+.skill-progress>div{
+    border-radius: 0.8rem 0px 0px 0.8rem;
+}
+/* common margin class */
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.skill-name{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+}
+
+/* common color classes */
+.text-highlight{
+    color: #2857a4;
+    font-weight: 600;
+}
+.mb-blue{
+    background-color: #2857a4;
+}
+.mb-red{
+    background-color: rgb(119, 37, 22);
+}
+.mb-orange{
+    background-color: #b65d34;
+}
+.mb-violet{
+    background-color: rgb(88, 14, 82);
+}
+.mb-cyan{
+    background-color: #12686e;
+}
+.mb-yellow{
+    background-color: rgb(192, 166, 79);
+}
+/* .......percentage classes..... */
+.forty-percent{
+    width: 40%;
+    height: inherit;
+}
+.fiftyfive-percent{
+    width: 55%;
+    height: inherit;
+}
+.sixty-percent{
+    width: 60%;
+    height: inherit;
+}
+.seventy-percent{
+    width: 70%;
+    height: inherit;
+}
+.eightyfive-percent{
+    width: 85%;
+    height: inherit;
+}
+.twenty-percent{
+    width: 20%;
+    height: inherit;
+}
+
+ /* portfolio section */
+ #portfolio{
+     /* background-color: white; */
+ }
+.portfolio-display{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* align-items: center; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.portfolio-items{
+    width: 30%;
+    height: auto;
+    /* text-align: center; */
+}
+.portfolio-items img{
+    width: 80%;
+}
+
+/* contact section */
+#contact{
+    background-image:linear-gradient(to right top,#2857a4,#593066);
+    height:500px;
+}
+#contact span{
+    color:white;
+}
+.contact-display{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+/* .contact-display div{
+    margin: 100px;
+} */
+.details-input{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.details-input input,.details-input textarea{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid white;
+    padding: 4px;
+    padding-left: 10px;
+}
+.my-details{
+    width: 40%;
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 8px;
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 20px;
+}
+.my-details h4,.my-details p{
+    color: rgb(233, 221, 221);
+}
+.my-details p{
+    font-size: 0.8rem;
+}
+
+/* experience section */
+.timeline{
+    position: relative;
+    width: 75%;
+    
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    margin: 5px;
+    min-height: 150px;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: -12.5%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #05295e;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: -9.2%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #05295e;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-divider{
+    height: 77%;
+    width: 0%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    border: 4px dashed rgb(21, 179, 241);
+    border-right: 0px;
+}
+.timeline-traveller{
+    position:sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    color: #05295e;
+    height: 25px;
+    z-index: 2;
+}
+.timeline-box h3::before{
+    content: "";
+    position: relative;
+    background-image: url(https://files.codingninjas.in/0000000000000723.jpg);
+    display: inline-block;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+.timeline-box h3{
+    color: #05295e;
+}
+.timeline-box h4{
+    margin-bottom: 0px;
+    color: rgb(240, 124, 57);
+    font-weight: 600;
+}
+.timeline-box p{
+    color: grey;
+}
+.work-time{
+    margin-top: 0px;
+}
+.contact-icon{
+    margin-top: 50px;
+}
+#contact div a{
+    margin: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#contact div i{
+    color: white;
+  
+}
+#contact div a:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196,196 , 0.3) ;
+}
